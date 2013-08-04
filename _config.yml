@@ -1,0 +1,25 @@
+name: Appsterdam Embassy Page
+markdown: redcarpet
+pygments: true
+paginate: 5
+paginate_path: "pages/page:num"
+timezone: Europe/Amsterdam
+exclude: [LICENCE, README.md]
+permalink: pages/:title/
+embassy:
+  name: Appsterdam Embassy Name
+  url: http://embassy.appsterdam.rs
+  location: Amsterdam
+  email: info@appsterdam.rs
+  social:
+    twitter:
+      handle: "@Appsterdam"
+      url: http://www.twitter.com/appsterdam
+    github:
+      handle: Appsterdam
+      url: https://www.github.com/appsterdam/open
+    facebook: http://www.facebook.com/appsterdam
+    linkedin: http://www.linkedin.com/groups/Appsterdam-3920468
+    flickr: http://www.flickr.com/groups/1723974@N21
+    youtube: http://www.youtube.com/appsterdam
+

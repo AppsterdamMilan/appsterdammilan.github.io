@@ -1,0 +1,48 @@
+---
+layout: default
+title: Welcome To Appsterdam
+---
+
+<article>
+  <h1>{{ site.embassy.name }}</h1>
+  <p>Welcome to the official Embassy Page of {{ site.name }}</p>
+  <p>The best place in the world to be and become an App Maker.</p>
+  <div class="quote clearfix"><p></p>
+    <blockquote id="mikequote"><p>If you want to make movies, go to Hollywood.<br>
+      If you want to make musicals, go to Broadway.<br>
+      If you want to make apps, go to Appsterdam.</p></blockquote>
+    <p id="quotee"><strong>Mike Lee</strong>,&nbsp;Mayor and founder of Appsterdam</p>
+    <p></p></div>
+  <p>Our goal is to bring app makers together, and our mission is to support their interests worldwide. We established Amsterdam as the capital of Appsterdam – the world capital of apps – to establish a centre of gravity for our industry, to provide a place where all app makers can gather, and to create a framework for people to give back and support the community.</p>
+  <p>
+    <a title="Mission Statement" href="https://appsterdam.rs/about/">Read More</a>
+  </p>
+</article>
+
+{% for post in paginator.posts %}
+<article>
+  <h1>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+  </h1>
+  {{ post.content }}
+</article>
+{% endfor %}
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <a href="/" class="previous">Previous</a>
+      {% else %}
+        <a href="/pages/page{{ paginator.previous_page }}" class="previous">Previous</a>
+      {% endif %}
+  {% else %}
+    <span class="previous"></span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="/pages/page{{ paginator.next_page }}" class="next">Next</a>
+  {% else %}
+    <span class="next "></span>
+  {% endif %}
+</div>
+
