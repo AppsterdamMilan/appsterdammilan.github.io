@@ -1,0 +1,15 @@
+name: Appsterdam Embassy Page
+markdown: redcarpet
+pygments: true
+embassy:
+  name: Appsterdam Embassy Name
+  url: http://embassy.appsterdam.rs
+  location: Amsterdam
+  social:
+    twitter: http://www.twitter.com/appsterdam
+    facebook: http://www.facebook.com/appsterdam
+    github: https://www.github.com/appsterdam/open
+    linkedin: http://www.linkedin.com/groups/Appsterdam-3920468
+    flickr: http://www.flickr.com/groups/1723974@N21
+    youtube: http://www.youtube.com/appsterdam
+
