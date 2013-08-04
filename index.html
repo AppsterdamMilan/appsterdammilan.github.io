@@ -19,7 +19,7 @@ title: Welcome To Appsterdam
   </p>
 </article>
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <article>
   <h1>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
@@ -27,4 +27,22 @@ title: Welcome To Appsterdam
   {{ post.content }}
 </article>
 {% endfor %}
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <a href="/" class="previous">Previous</a>
+      {% else %}
+        <a href="/pages/page{{ paginator.previous_page }}" class="previous">Previous</a>
+      {% endif %}
+  {% else %}
+    <span class="previous"></span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="/pages/page{{ paginator.next_page }}" class="next">Next</a>
+  {% else %}
+    <span class="next "></span>
+  {% endif %}
+</div>
 
