@@ -7,8 +7,11 @@ embassy:
   name: Appsterdam Embassy Name
   url: http://embassy.appsterdam.rs
   location: Amsterdam
+  email: info@appsterdam.rs
   social:
-    twitter: http://www.twitter.com/appsterdam
+    twitter:
+      handle: "@Appsterdam"
+      url: http://www.twitter.com/appsterdam
     facebook: http://www.facebook.com/appsterdam
     github: https://www.github.com/appsterdam/open
     linkedin: http://www.linkedin.com/groups/Appsterdam-3920468
