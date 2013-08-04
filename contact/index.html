@@ -9,6 +9,13 @@ title: Contact
   Contact us by sending an email to <a href="{{ site.embassy.email }}" title="Mail us">{{ site.embassy.email }}</a> or hit us up on twitter on <a href="{{ site.embassy.social.twitter.url }}" title="{{ site.embassy.name }} on twitter">{{ site.embassy.social.twitter.handle }}</a>.
   </p>
   <p>
+  <h2>Organizers</h2>
+  <p>
+    Appsterdam is volunteer based organization. We have many contributors around the world and we are always looking for more.
+  </p>
+</article>
+<section class="members clearfix" id="organizers">
+</section>
 </article>
 <article>
   <h1>Contact The Appsterdam Foundation</h1>
@@ -22,5 +29,20 @@ title: Contact
   <p>VAT/BTW nbr: NL 850 954 678 B01<br>
   Chamber of Commerce: Amsterdam 5.3633.334<br>
   IBAN Bank Account: NL03 ABNA 0625 4008 28</p>
-</article>
+</section>
+
+
+<script>
+  $(function() {
+    $.getJSON("https://api.github.com/orgs/{{ site.embassy.social.github.handle }}/members", function(data) {
+      var organizers = $("#organizers")
+      $(data).each(function(index, organizer_data) {
+        $.getJSON(organizer_data.url, function(organizer_details) {
+          var member = $("<div class='member'><div class='info'><a href='"+organizer_data.html_url+"'><img src='"+organizer_data.avatar_url+"' class='avatarphoto' width='40' height='40' alt='Avatar'></a><a href='"+organizer_data.html_url+"'>"+organizer_details.name+"</a><b>"+organizer_details.company+"</b></div><a href='"+organizer_data.html_url+"'>"+organizer_data.html_url+"</a><br/><a href='mailto:"+organizer_details.email+"' title='Email "+organizer_details.name+"'>Email: "+organizer_details.email+"</a><ul class='skills'></ul></div>");
+          organizers.append(member)
+        });
+      });
+    });
+  });
+</script>
 

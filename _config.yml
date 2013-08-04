@@ -12,8 +12,10 @@ embassy:
     twitter:
       handle: "@Appsterdam"
       url: http://www.twitter.com/appsterdam
+    github:
+      handle: Appsterdam
+      url: https://www.github.com/appsterdam/open
     facebook: http://www.facebook.com/appsterdam
-    github: https://www.github.com/appsterdam/open
     linkedin: http://www.linkedin.com/groups/Appsterdam-3920468
     flickr: http://www.flickr.com/groups/1723974@N21
     youtube: http://www.youtube.com/appsterdam
