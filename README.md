@@ -17,7 +17,7 @@ If you run Appsterdam Greece and have an organization page named AppsterdamGreec
 
 Doing so will ensure that anything on the _master_ branch will be published on http://AppsterdamGreece.github.io.
 
-### Obtaining an _yourembassy.appsterdam.rs_ URl
+### Obtaining an _yourembassy.appsterdam.rs_ URL
 
 Open an [issue](http://github.com/Appsterdam/Open/issues) on the main [Appsterdam Open GitHub project](http://github.com/Appsterdam/Open) requesting a url.
 
