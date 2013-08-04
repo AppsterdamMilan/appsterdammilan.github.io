@@ -6,6 +6,11 @@ This repo contains the template for the Appsterdam Embassy Pages which can be us
 
 Fork the repository to your local Embassy GitHub organization and use the correct naming convention.
 
+
+### Settings
+
+Open the `_config.yml` file in the root of the project and update the fields to reflect your embassy.
+
 ### Publishing a page
 
 If you run Appsterdam Greece and have an organization page named AppsterdamGreece you should name the forked repository _AppsterdamGreece.github.io_.
