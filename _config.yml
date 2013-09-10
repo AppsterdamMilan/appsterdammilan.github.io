@@ -1,4 +1,4 @@
-name: Appsterdam Embassy Page
+name: Appsterdam Milan
 markdown: redcarpet
 pygments: true
 paginate: 5
@@ -7,14 +7,14 @@ timezone: Europe/Amsterdam
 exclude: [LICENCE, README.md]
 permalink: pages/:title/
 embassy:
-  name: Appsterdam Embassy Name
+  name: Appsterdam Milan
   url: http://embassy.appsterdam.rs
-  location: Amsterdam
+  location: Milano
   email: info@appsterdam.rs
   social:
     twitter:
       handle: "@Appsterdam"
-      url: http://www.twitter.com/appsterdam
+      url: https://twitter.com/AppsterdamMilan
     github:
       handle: Appsterdam
       url: https://www.github.com/appsterdam/open
