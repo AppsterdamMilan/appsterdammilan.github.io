@@ -31,16 +31,16 @@ title: Benvenuti a Appsterdam Milano
 <div class="pagination">
   {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-        <a href="/" class="previous">Previous</a>
+        <a href="/" class="previous">Precedente</a>
       {% else %}
-        <a href="/pages/page{{ paginator.previous_page }}" class="previous">Previous</a>
+        <a href="/pages/page{{ paginator.previous_page }}" class="previous">Precedente</a>
       {% endif %}
   {% else %}
     <span class="previous"></span>
   {% endif %}
-  <span class="page_number ">Pagina: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  <span class="page_number ">Pagina: {{ paginator.page }} di {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
-    <a href="/pages/page{{ paginator.next_page }}" class="next">Next</a>
+    <a href="/pages/page{{ paginator.next_page }}" class="next">Prossima</a>
   {% else %}
     <span class="next "></span>
   {% endif %}
