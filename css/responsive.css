@@ -1,13 +1,13 @@
 /* Large desktop */
 @media (min-width: 1200px) {
 	.container{
-		width: 1140px;
+		width: 1140px !important;
 	}
 	.container header{
 		width: 200px;
 	}
 	.container section {
-		width: 800px;
+		width: 880px;
 	}
 }
  
