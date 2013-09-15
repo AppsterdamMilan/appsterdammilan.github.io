@@ -8,6 +8,8 @@ Tags: buddypress
 Version: 0.1
 */
 
+@import url(responsive.css);
+
 /* Reset most CSS */
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,hgroup,menu,nav,section,menu,time,mark,audio,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}nav ul{list-style:none;}article,aside,figure,footer,header,hgroup,nav,section{display:block;}html{overflow-y:scroll;}a{font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}del{text-decoration:line-through;}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help;}table{border-collapse:collapse;border-spacing:0;font-size:inherit;font:100%;}th{font-weight:bold;vertical-align:bottom;}td{font-weight:normal;vertical-align:top;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}input,select{vertical-align:middle;}pre{white-space:pre-line;word-wrap:break-word;}input[type=radio]{vertical-align:text-bottom;}input[type=checkbox]{vertical-align:baseline;}select,input,textarea{font:99% sans-serif;}a:hover,a:active{outline:none;}small{font-size:85%;}strong,th{font-weight:bold;}td,td img{vertical-align:top;}sub,sup{font-size:75%;line-height:0;position:relative;}sup{top:-.5em;}sub{bottom:-.25em;}pre,code,kbd,samp{font-family:monospace, sans-serif;}.clickable,label,input[type=button],input[type=submit],button{cursor:pointer;}button,input,select,textarea{margin:0;}button{width:auto;overflow:visible;}
 
@@ -28,7 +30,8 @@ a {
 /* General */
 body {
 	background: #eee;
-	font-family: gesta, sans-serif;
+	font-family: gesta, Helvetica, Arial, sans-serif;
+	font-weight: 300;
 }
 
 a {
@@ -60,7 +63,7 @@ strong {
 .content {
 	float: left;
 	width: 600px;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .placeholder {
@@ -279,6 +282,7 @@ article blockquote p {
 	margin: 0;
 	padding-left: 25px;
 	font-style: italic;
+	font-size: 12px;
 }
 
 .paypal_button input {
