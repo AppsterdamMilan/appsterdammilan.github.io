@@ -12,8 +12,11 @@ title: Contact
   <h2>Organizzatori</h2>
   <p>Appsterdam è un'organizzazione basata sul volontariato. Abbiamo molti collaboratori in tutto il mondo e siamo sempre alla ricerca di nuove persone interessate a unirsi a noi.</p>
 </article>
-<section class="members clearfix" id="organizers">
+
+<section class="members clearfix" id="organizers" ng-controller="staffCtrl">
+
 </section>
+
 </article>
 <article>
   <h1>Contatta la Fondazione Appsterdam (inglese)</h1>
@@ -31,7 +34,19 @@ title: Contact
 
 
 <script>
-  $(function() {
+
+function staffCtrl($scope){
+  $scope.dati = [
+    {
+      nome: 'Gianfranco Reppucci',
+      foto: '',
+      twitter: '',
+      bio: ''
+    }
+  ];
+}
+
+ /* $(function() {
     $.getJSON("https://api.github.com/orgs/{{ site.embassy.social.github.handle }}/members", function(data) {
       var organizers = $("#organizers")
       $(data).each(function(index, organizer_data) {
@@ -41,6 +56,6 @@ title: Contact
         });
       });
     });
-  });
+  });*/
 </script>
 
