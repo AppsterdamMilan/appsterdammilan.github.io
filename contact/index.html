@@ -15,6 +15,13 @@ title: Contact
 
 <section class="members clearfix" id="organizers" ng-controller="staffCtrl">
 
+  <div class="singolo" ng-repeat="p in persone">
+    <img src="{{p.foto}}" alt="{{p.nome}}">
+    <h4>{{p.nome}}</h4>
+    <p class="twitter"><a href="http://twitter.com/{{p.twitter}}" target="_blank">@{{p.twitter}}</a></p>
+    <p>{{p.bio}}</p>
+  </div>
+
 </section>
 
 </article>
@@ -36,12 +43,12 @@ title: Contact
 <script>
 
 function staffCtrl($scope){
-  $scope.dati = [
+  $scope.persone = [
     {
       nome: 'Gianfranco Reppucci',
-      foto: '',
-      twitter: '',
-      bio: ''
+      foto: 'https://si0.twimg.com/profile_images/378800000503243337/c4dcd06f129da12e648f3d10fe55197b_bigger.jpeg',
+      twitter: 'giefferre',
+      bio: 'Born in Naples, Italy, on June 24th, 1982, actually based in Milan, Gianfranco has been working as software architect and web developer since 2003, using common web programming languages such as PHP and Python.'
     }
   ];
 }
