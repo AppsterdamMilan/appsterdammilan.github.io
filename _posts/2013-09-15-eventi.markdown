@@ -27,5 +27,13 @@ Se finito il Talklab non siete di fretta potete unirvi al resto del gruppo per u
 
 
 ###Fall Drinks
+Questi sono i nostri aperitivi "social", ne proponiamo uno ogni 3 mesi al [Pacino Café](http://www.pacinocafe.com/it-it/home.php) lo scopo dei Fall Drinks è far conoscere la community di Appsterdam Milano a un'utenza più ampia e coinvolgere anche figure diverse da Developers e Designers per permettere a tutti di ampliare il proprio network di conoscenze professionali.
+
+Non c'è un "livello tecnico" necessario!
 
 ###Workshops
+I Workshop sono delle mezze giornate di formazione organizzate dal team di Appsterdam Milano. Ogni mese un workshop di **4 ore di sabato mattina** approfondirà un tema, a rotazione tra vari argomenti (iOS, Android, Web, ecc) a un pubblico di **non più di 12 persone** presso il coworking [Login](http://www.coworkinglogin.it/).
+
+La prenotazione tramite la pagina Meetup dei singoli workshop è **obbligatoria** per partecipare.
+
+Le conoscenze tecniche necessarie per partecipare verranno segnalate di volta in volta per in singoli Workshop.
